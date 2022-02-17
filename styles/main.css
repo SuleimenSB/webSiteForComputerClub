@@ -20,83 +20,238 @@
 }
 
 * {
+  /* Блочная модель */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 
+  /* Типографика */
   font-family: "Montserrat";
 }
 
 .container {
+  /* Блочная модель */
   max-width: 1300px;
   margin: 0 auto;
 }
 
 header {
-  background-color: #101820;
+  /* Блочная модель */
   width: 100%;
+
+  /* Оформление */
+  background-color: #101820;
 }
 
 .header__navbar {
+  /* Блочная модель */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   min-height: 100px;
-
-  background-color: #101820;
 }
 
 .header__menu {
+  /* Блочная модель */
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 .header__menu>ul {
+  /* Блочная модель */
   display: flex;
   flex-direction: row;
   margin-right: 55px;
 }
 
 .header__menu>ul>li {
-  list-style-type: none;
+  /* Блочная модель */
   margin-right: 20px;
+
+  /* Оформление */
+  list-style-type: none;
 }
 
 .header__menu>ul>li>a {
-  text-decoration: none;
-  color: #f6f6f6f6;
+  /* Блочная модель */
+  padding: 6px 8px;
+
+  /* Типографика */
   font-size: 14px;
   font-weight: 500;
   line-height: 26px;
-  padding: 6px 8px;
+  text-decoration: none;
+  color: #f6f6f6f6;
+
+  /* Анимация */
   transition: all 500ms ease;
 }
 
 .header__menu-btn>button {
-  background-color: #e14a04;
-  color: #FFFFFF;
-  align-items: center;
-  border-radius: 20px;
+  /* Блочная модель */
+  padding: 0 18px 0 16px;
+  height: 40px;
   justify-content: center;
+  align-items: center;
+
+  /* Типографика */
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
-  padding: 0 18px 0 16px;
-  height: 40px;
+  color: #FFFFFF;
+
+  /* Оформление */
+  border-radius: 20px;
+  background-color: #e14a04;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border: none;
+
+  /* Анимация */
   transition: all 500ms ease;
 }
+
 .header__menu>ul>li>a:hover {
-  background: rgba(0, 0, 0, 0);
+  /* Типографика */
   color: #e14a04;
+
+  /* Оформление */
+  background: rgba(0, 0, 0, 0);
   box-shadow: inset 0 0 0 3px #f6f6f6;
 }
 
 button:hover {
-  background: rgba(0, 0, 0, 0);
+  /* Типографика */
   color: #e14a04;
+
+  /* Оформление */
+  background: rgba(0, 0, 0, 0);
   box-shadow: inset 0 0 0 3px #f6f6f6;
+}
+
+.about {
+  /* Оформление */
+  background-image: url("../assets/img/about__bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__wrapper-title {
+  /* Блочная модель */
+  padding-top: 30px;
+  margin-bottom: 45px;
+
+  /* Типографика */
+  font-size: 76px;
+  line-height: 100px;
+  color: #f6f6f6;
+  font-weight: 700;
+}
+
+.about__wrapper-title>span {
+  /* Типографика */
+  color: #e14a04;
+}
+
+hr {
+  /* Блочная модель */
+  max-width: 420px;
+  margin-bottom: 50px;
+
+  /* Оформление */
+  border: 3px solid #e14a04;
+}
+
+.about__content-description {
+  /* Блочная модель */
+  margin-bottom: 25px;
+
+  /* Типографика */
+  font-size: 16px;
+  color: #f6f6f6;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.about__items {
+  /* Блочная модель */
+  display: flex;
+  flex-direction: column;
+  width: 67%;
+}
+
+.about__items-content {
+  /* Блочная модель */
+  display: flex;
+}
+
+.about__item-description {
+  /* Блочная модель */
+  margin-bottom: 16px;
+
+  /* Типографика */
+  color: #f6f6f6;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.about__items-description>p {
+  /* Оформление */
+  background-color: #e14a04;
+}
+
+.about__items-wrapper {
+  /* Блочная модель */
+  margin-right: 30px;
+}
+
+.about__item-description>span {
+  /* Типографика */
+  font-weight: 600;
+}
+
+.about__item-description {
+  /* Блочная модель */
+  padding-left: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    /* Блочная модель */
+    padding: 0 15px;
+    height: 100%;
+  }
+
+  section {
+    /* Блочная модель */
+    padding: 0 15px;
+  }
+
+  .header__menu,
+  .header__menu-btn {
+    /* Блочная модель */
+    display: none;
+  }
+
+  .header__navbar {
+    /* Блочная модель */
+    justify-content: center;
+  }
+
+  .about__wrapper-title {
+    /* Типографика */
+    line-height: 50px;
+    font-size: 30px;
+  }
+
+  .about__items {
+    /* Блочная модель */
+    width: 100%;
+  }
+
+  .about__items-content {
+    /* Блочная модель */
+    flex-direction: column;
+  }
 }
