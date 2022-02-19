@@ -293,6 +293,101 @@ hr {
   box-shadow: inset 0 0 0 3px #e14a04;
 }
 
+.rules {
+  /* Оформление */
+  background-image: url("../assets/img/rules__bg-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rules__content {
+  /* Блочная модель */
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.rules__content-title {
+  /* Блочная модель */
+  margin-bottom: 60px;
+
+  /* Типографика */
+  text-align: center;
+}
+
+.rules__content-items {
+  /* Блочная модель */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.rules__content-wrapper {
+  /* Блочная модель */
+  display: flex;
+  flex-direction: column;
+  max-width: 318px;
+
+  /* Типографика */
+  text-align: center;
+  align-items: center;
+}
+
+.rules__content-item {
+  /* Блочная модель */
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: center;
+
+  /* Оформление */
+  border-radius: 50%;
+  background-color: #e14a04;
+}
+
+.rules__content-title {
+  /* Типографика */
+  font-size: 62px;
+  line-height: 100px;
+}
+
+.rules__content-btn>button {
+  /* Блочная модель */
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  max-width: 130px;
+  margin: 0 auto;
+
+  /* Типографика */
+  color: #f6f6f6;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+
+  /* Оформление */
+  background: #e14a04;
+  border-radius: 30px;
+  border: none;
+
+  /* Анимация */
+  transition: all 500ms ease;
+}
+
+.rules__content-btn>button:hover {
+  /* Типографика */
+  color: #e14a04;
+
+  /* Оформление */
+  background: rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 0 3px #f6f6f6;
+}
+
+
 @media screen and (max-width: 800px) {
   header {
     /* Блочная модель */
@@ -330,5 +425,16 @@ hr {
   .about__items-content {
     /* Блочная модель */
     flex-direction: column;
+  }
+
+  .rules__content-items {
+    /* Блочная модель */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .rules__content-wrapper {
+    /* Блочная модель */
+    margin-bottom: 45px;
   }
 }
