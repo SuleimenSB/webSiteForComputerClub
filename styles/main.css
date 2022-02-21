@@ -362,6 +362,7 @@ hr {
   padding: 8px;
   max-width: 130px;
   margin: 0 auto;
+  margin-bottom: 40px;
 
   /* Типографика */
   color: #f6f6f6;
@@ -387,6 +388,32 @@ hr {
   box-shadow: inset 0 0 0 3px #f6f6f6;
 }
 
+.gallery {
+  background-color: #e14a04;
+}
+
+.gallery__content {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.gallery__content-title {
+  font-size: 62px;
+  color: #f6f6f6;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 50px;
+}
+
+.gallery__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.gallery__content-img>img {
+  max-width: 307px;
+}
 
 @media screen and (max-width: 800px) {
   header {
