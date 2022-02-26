@@ -33,6 +33,8 @@
   /* Блочная модель */
   max-width: 1300px;
   margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 header {
@@ -110,6 +112,7 @@ header {
 
   /* Анимация */
   transition: all 500ms ease;
+  cursor: pointer;
 }
 
 .header__menu>ul>li>a:hover {
@@ -232,15 +235,15 @@ hr {
   max-width: 900px;
 }
 
+h2 {
+  color: #f6f6f6;
+  font-size: 62px;
+}
+
 .stocks__content-title {
   /* Блочная модель */
   text-align: center;
-  margin-bottom: 8px;
-
-  /* Типографика */
-  font-weight: 600;
-  color: #f6f6f6;
-  font-size: 20px;
+  margin-bottom: 60px;
 }
 
 .stocks__content-description {
@@ -282,6 +285,7 @@ hr {
 
   /* Анимация */
   transition: all 500ms ease;
+  cursor: pointer;
 }
 
 .stocks__content-btn>button:hover {
@@ -302,8 +306,6 @@ hr {
 
 .rules__content {
   /* Блочная модель */
-  max-width: 1300px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -351,6 +353,7 @@ hr {
 
 .rules__content-title {
   /* Типографика */
+  color: #101820;
   font-size: 62px;
   line-height: 100px;
 }
@@ -364,10 +367,11 @@ hr {
   margin: 0 auto;
   margin-bottom: 40px;
 
+
   /* Типографика */
   color: #f6f6f6;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 
   /* Оформление */
@@ -377,6 +381,7 @@ hr {
 
   /* Анимация */
   transition: all 500ms ease;
+  cursor: pointer;
 }
 
 .rules__content-btn>button:hover {
@@ -389,39 +394,38 @@ hr {
 }
 
 .gallery {
+  /* Оформление */
   background-color: #e14a04;
 }
 
-.gallery__content {
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
 .gallery__content-title {
-  font-size: 62px;
-  color: #f6f6f6;
-  text-align: center;
+  /* Блочная модель */
   margin-bottom: 40px;
   padding-top: 50px;
+
+  /* Типографика */
+  text-align: center;
 }
 
 .gallery__content-wrapper {
+  /* Блочная модель */
   display: flex;
   justify-content: space-between;
   padding-bottom: 40px;
 }
 
 .gallery__content-img>img {
+  /* Блочная модель */
   max-width: 307px;
 }
 
 .contacts {
+  /* Оформление */
   background-color: #101820;
 }
 
 .contacts__content {
-  max-width: 1300px;
-  margin: 0 auto;
+  /* Блочная модель */
   padding-top: 70px;
   display: flex;
   align-items: center;
@@ -430,31 +434,35 @@ hr {
 }
 
 .contacts__content-items {
+  /* Блочная модель */
   display: flex;
   flex-direction: column;
 }
 
 .contacts__content-title {
-  color: #f6f6f6;
-  font-size: 62px;
+  /* Блочная модель */
   margin-bottom: 15px;
 }
 
 .contacts__content-wrapper {
+  /* Блочная модель */
   display: flex;
   flex-direction: column;
 }
 
 .contacts__content-wrapper>img {
+  /* Блочная модель */
   max-width: 40px;
 }
 
 .contacts__content-icon {
+  /* Блочная модель */
   display: flex;
   align-items: center;
 }
 
 .contacts__content-description {
+  /* Типографика */
   color: #f6f6f6;
   font-size: 20px;
   text-decoration: none;
@@ -462,33 +470,42 @@ hr {
 }
 
 .contacts__content-description:hover {
+  /* Типографика */
   text-decoration: underline;
   color: #e14a04;
 }
 
 .contacts__content-icon {
+  /* Блочная модель */
   margin-bottom: 20px;
 }
 
 .contacts__content-icon>img {
+  /* Блочная модель */
   margin-right: 16px;
 }
 
 .contacts__content-text {
+  /* Типографика */
   font-weight: 600;
   color: #f6f6f6;
   font-size: 20px;
 }
 
 .contacts__content-map>img {
+  /* Блочная модель */
   max-width: 760px;
 }
 
 .contacts__content-bottom {
-  color: #f6f6f6;
-  font-size: 16px;
+  /* Блочная модель */
   display: flex;
   justify-content: center;
+  padding-bottom: 50px;
+
+  /* Типографика */
+  color: #f6f6f6;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 800px) {
@@ -523,6 +540,7 @@ hr {
   .about__items {
     /* Блочная модель */
     width: 100%;
+    padding-bottom: 50px;
   }
 
   .about__items-content {
@@ -539,5 +557,33 @@ hr {
   .rules__content-wrapper {
     /* Блочная модель */
     margin-bottom: 45px;
+  }
+
+  .gallery__content-wrapper {
+    /* Блочная модель */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts__content-items {
+    /* Блочная модель */
+    align-items: center;
+  }
+
+  .contacts__content {
+    /* Блочная модель */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__content-map {
+    /* Блочная модель */
+    max-width: 400px;
+  }
+
+  .contacts__content-bottom {
+    /* Типографика */
+    font-size: 14px;
   }
 }
