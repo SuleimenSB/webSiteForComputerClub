@@ -219,6 +219,22 @@ hr {
   padding-left: 5px;
 }
 
+.list {
+  background-color: #101820;
+}
+
+.list__table {
+  margin: 0 auto;
+}
+
+tr {
+  color: #f6f6f6;
+}
+
+tbody>tr {
+  color: #f6f6f6;
+}
+
 .stocks {
   /* Блочная модель */
   padding: 70px 70px;
@@ -238,6 +254,7 @@ hr {
 h2 {
   color: #f6f6f6;
   font-size: 62px;
+  text-align: center;
 }
 
 .stocks__content-title {
